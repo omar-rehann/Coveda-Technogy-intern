@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        form {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        small {
+            color: red;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="myForm">
+        <h2>Register</h2>
+
+        <input type="text" id="name" placeholder="Name">
+        <small id="nameError"></small>
+
+        <input type="email" id="email" placeholder="Email">
+        <small id="emailError"></small>
+
+        <input type="password" id="password" placeholder="Password">
+        <small id="passwordError"></small>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        let form = document.getElementById("myForm");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            let name = document.getElementById("name");
+            let email = document.getElementById("email");
+            let password = document.getElementById("password");
+
+            let nameError = document.getElementById("nameError");
+            let emailError = document.getElementById("emailError");
+            let passwordError = document.getElementById("passwordError");
+
+            let isValid = true;
+
+            // Reset errors
+            nameError.innerText = "";
+            emailError.innerText = "";
+            passwordError.innerText = "";
+
+            // Name validation
+            if (name.value.trim() === "") {
+                nameError.innerText = "Name is required";
+                isValid = false;
+            }
+
+            // Email validation
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email.value.trim() === "") {
+                emailError.innerText = "Email is required";
+                isValid = false;
+            } else if (!emailPattern.test(email.value)) {
+                emailError.innerText = "Invalid email format";
+                isValid = false;
+            }
+
+            // Password validation
+            if (password.value.length < 6) {
+                passwordError.innerText = "Password must be at least 6 characters";
+                isValid = false;
+            }
+
+            // Success
+            if (isValid) {
+                alert("Form submitted successfully 🚀");
+                form.reset();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
