@@ -52,15 +52,6 @@ To practice building a professional landing page while improving skills in respo
 
 ---
 
-## 🔗 Live Demo
-
-👉 Add your live demo link here  
-
-## 📂 Repository
-
-👉 Add your GitHub repo link here  
-
----
 
 ## 👨‍💻 Author
 

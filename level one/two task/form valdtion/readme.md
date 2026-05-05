@@ -1,20 +1,10 @@
-# 🚀 Interactive Form
+# 🚀 Interactive form
 
-A modern and fully responsive landing page built using **HTML, CSS, and basic JavaScript**.  
+A modern and fully Interactive form built using **HTML, CSS, and basic JavaScript**.  
 The project focuses on clean design, accessibility, and smooth user experience across all devices.
 
 ---
 
-## 📌 Features
-
-- 🧭 Navigation Bar  
-- 🎯 Hero Section  
-- ⭐ Features Section  
-- 📞 Footer  
-- 📱 Fully Responsive (Mobile / Tablet / Desktop)  
-- ✨ Smooth Scrolling & Basic Animations  
-
----
 
 ## 🛠️ Technologies Used
 
@@ -26,13 +16,16 @@ The project focuses on clean design, accessibility, and smooth user experience a
 
 ## 📋 Tasks Completed
 
-### ✅ Task 1: Responsive Landing Page
+### ✅ Task 2: Interactive form
 
 - Used **semantic HTML tags** to improve accessibility and SEO.  
-- Designed layout using **CSS Flexbox / Grid**.  
-- Applied **mobile-first approach** with media queries.  
+- Validate form inputs (e.g., required fields, email
+format, password strength)
+- Implement input focus and blur events for better UX.  
 - Implemented **smooth scrolling** for better navigation.  
-- Added **basic animations** for a modern UI/UX.  
+- Provide dynamic error messages without page reload.
+-style the form for a clean and professional
+appearance.
 
 ---
 
@@ -49,16 +42,6 @@ The landing page is fully responsive and works smoothly on:
 ## 🎯 Project Goal
 
 To practice building a professional landing page while improving skills in responsive design, layout structuring, and basic JavaScript interactions.
-
----
-
-## 🔗 Live Demo
-
-👉 Add your live demo link here  
-
-## 📂 Repository
-
-👉 Add your GitHub repo link here  
 
 ---
 
